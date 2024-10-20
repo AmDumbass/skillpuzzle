@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+    scroll-behavior: smooth;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: skyblue;
+    box-shadow: 0 0 5px #000a;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+nav svg {
+    fill: black;
+}
+
+.nav-link a:hover {
+    font-size: 1.5rem;
+}
+
+.nav-right {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.nav-right svg {
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    border: 3px solid black;
+    border-radius: 20%;
+    background-color: azure;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+main {
+    text-shadow: 2px 1px 1px #0004;
+    color: floralwhite;
+}
+
+section:not(#intro) {
+    padding: 20px 100px;
+    border-bottom: 2px solid rgba(255, 250, 240, 0.205);
+}
+
+#intro {
+    background: #000c url(./media/bg.png) no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: left;
+    padding: 100px;
+}
+
+#feature {
+    background: linear-gradient(135deg, #83a1d1, #c7a9e9);
+}
+
+#about {
+    background: linear-gradient(135deg, #d3b554, #fda085);
+}
+
+#parent {
+    background: linear-gradient(135deg, #50a7c2, #53e3a6);
+}
+
+#contact {
+    background: linear-gradient(135deg, #77a1d3, #79cbca);
+}
+
+#intro div {
+    max-width: 55%;
+}
+
+#intro div * {
+    margin: 10px 0;
+}
+
+#intro h1 {
+    color: gold;
+    font-size: 2rem;
+    text-shadow: -2px 2px rgba(218, 165, 32, 0.381);
+}
+
+#intro p {
+    font-size: 1.25rem;
+}
+
+.h2-container {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+    width: max-content;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: 1px solid #fffa;
+    border-radius: 5vw;
+    box-shadow: 0 3px 3px #fffa;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container video,
+.container img {
+    width: 50%;
+    height: 90%;
+    border-radius: 1vw;
+}
+
+#contact p {
+    margin: 0 10px;
+}
+
+#contact img {
+    animation: updown 1.5s ease-in-out alternate-reverse infinite;
+}
+
+::placeholder {
+    color: azure;
+    padding: 10px;
+}
+
+input {
+    height: 3rem;
+}
+
+textarea,
+input {
+    display: block;
+    width: 90%;
+    font-family: "Roboto Slab";
+    font-size: 1rem;
+    padding: 0 12px;
+    margin: 5px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    resize: none;
+}
+
+#form-submit {
+    background-color: brown;
+    color: white;
+    font-size: 1.25rem;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+strong {
+    font-size: 1.1rem;
+}
+
+footer {
+    min-height: 100px;
+    background: linear-gradient(90deg ,rgb(8, 18, 34), rgb(29, 5, 5));
+}
+
+@media (max-width: 950px) {
+    .nav-link {
+        display: none;
+    }
+}
+
+@keyframes updown {
+    from {transform: translateY(-20px);}
+    to {transform: translateY(20px);}
+}
