@@ -61,11 +61,12 @@ nav svg {
 }
 
 .brand {
+    font-size: xx-large;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: auto;
 }
 
@@ -99,12 +100,12 @@ section:not(#intro) {
     background: linear-gradient(135deg, #50a7c2, #53e3a6);
 }
 
-#contact {
-    background: linear-gradient(135deg, #77a1d3, #79cbca);
+#material {
+    background: linear-gradient(135deg, #f3e3ac, #fab397);
 }
 
-#intro div {
-    max-width: 55%;
+#contact {
+    background: linear-gradient(135deg, #77a1d3, #79cbca);
 }
 
 #intro div * {
@@ -140,6 +141,11 @@ h3 {
     font-size: 1.5rem;
 }
 
+iframe {
+    display: flex;
+    align-items: center;
+}
+
 .container {
     margin: 10px 0;
     display: flex;
@@ -148,10 +154,8 @@ h3 {
     gap: 20px;
 }
 
-.container video,
 .container img {
-    width: 50%;
-    height: 90%;
+    height: 400px;
     border-radius: 1vw;
 }
 
@@ -159,7 +163,7 @@ h3 {
     margin: 0 10px;
 }
 
-#contact img {
+.updown-img {
     animation: updown 1.5s ease-in-out alternate-reverse infinite;
 }
 
@@ -210,6 +214,50 @@ strong {
 footer {
     min-height: 100px;
     background: linear-gradient(90deg ,rgb(8, 18, 34), rgb(29, 5, 5));
+}
+
+.label-container{
+    display: flex;
+    justify-content: center;
+}
+
+#material label {
+    display: block;
+    cursor: pointer;
+    padding: 0 1rem;
+    width: max-content;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: 1px solid #fffa;
+    border-radius: 5vw;
+    box-shadow: 0 3px 3px #fffa;
+}
+
+.tabs li {
+    list-style: none;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs .container {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked ~ .container {
+    display: block;
+}
+
+button {
+    cursor: pointer;
 }
 
 @media (max-width: 950px) {
