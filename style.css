@@ -219,18 +219,18 @@ footer {
 .label-container{
     display: flex;
     justify-content: center;
-}
-
-#material label {
-    display: block;
-    cursor: pointer;
-    padding: 0 1rem;
-    width: max-content;
-    margin: 10px 0;
-    padding: 10px 15px;
+    justify-self: center;
     border: 1px solid #fffa;
     border-radius: 5vw;
     box-shadow: 0 3px 3px #fffa;
+    width: max-content;
+}
+
+#material {
+    label {
+        cursor: pointer;
+        padding: 10px 15px;
+    }
 }
 
 .tabs li {
@@ -260,9 +260,13 @@ button {
     cursor: pointer;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
     .nav-link {
         display: none;
+    }
+    
+    .container {
+        display: block;
     }
 }
 
