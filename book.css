@@ -51,13 +51,18 @@ nav svg {
     margin-right: 10px;
 }
 
-.nav-right svg {
+.nav-right svg,
+.nav-right img {
     height: 32px;
     width: 32px;
     padding: 2px;
     border: 3px solid black;
     border-radius: 20%;
     background-color: azure;
+}
+
+.nav-right img {
+    padding: 0;
 }
 
 .brand {
@@ -71,12 +76,12 @@ nav svg {
 }
 
 footer {
-    min-height: 100px;
+    height: 50px;
     background: linear-gradient(90deg ,rgb(8, 18, 34), rgb(29, 5, 5));
 }
 
 body {
-    background: linear-gradient(135deg, #77a1d3, #79cbca);
+    background: linear-gradient(135deg, #83a1d1, #c7a9e9);
     height: 100%;
 }
 
