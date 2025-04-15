@@ -2,12 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebas
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAhV_iCpb3JyTocRL5aWXOxMFbQVW4NnYo",
-    authDomain: "skillpuzzle-5f627.firebaseapp.com",
-    projectId: "skillpuzzle-5f627",
-    storageBucket: "skillpuzzle-5f627.firebasestorage.app",
-    messagingSenderId: "365308682982",
-    appId: "1:365308682982:web:ab28961e0afbb0829b1127"
+    apiKey: "AIzaSyDmQFQGnCvqjoQbYlJeqdIEw6Phm7hiPcM",
+    authDomain: "skillpuzzle-32e3a.firebaseapp.com",
+    projectId: "skillpuzzle-32e3a",
+    storageBucket: "skillpuzzle-32e3a.firebasestorage.app",
+    messagingSenderId: "808477225029",
+    appId: "1:808477225029:web:202037376f42c3761d332c",
+    measurementId: "G-F87LWSGP0D"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -17,7 +18,6 @@ const userName = document.getElementById('user-name');
 const userEmail = document.getElementById('user-email');
 const userPhoto = document.getElementById('user-photo');
 const signOutButton = document.getElementById('sign-out-btn');
-
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -34,10 +34,10 @@ onAuthStateChanged(auth, (user) => {
 // Sign out functionality
 signOutButton.addEventListener('click', () => {
     signOut(auth).then(() => {
-    // Sign-out successful.
-    window.location.href = '/index.html';
+        // Sign-out successful.
+        window.location.href = '/index.html';
     }).catch((error) => {
-    // An error happened.
-    console.error('Error signing out:', error);
+        // An error happened.
+        console.error('Error signing out:', error);
     });
 });

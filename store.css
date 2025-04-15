@@ -84,7 +84,7 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 30px;
+    margin: min(30px, 5%);
     gap: 10px;
 }
 
@@ -92,6 +92,7 @@ body {
     height: 500px;
     background-color: white;
     padding: 20px;
+    padding-bottom: 30px;
     border-radius: 20px;
     margin: auto;
     display: flex;
@@ -99,14 +100,14 @@ body {
 }
 
 .card img {
-    width: 100%;
+    /* max-width: 400px; */
+    height: 400px;
     display: block;
     margin: 0 auto auto;
 }
 
 .card .price {
     color: red;
-    margin-bottom: auto;
 }
 
 .card h2 {

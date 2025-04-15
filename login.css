@@ -71,13 +71,14 @@ nav svg {
 }
 
 footer {
+    margin-top: auto !important;
     min-height: 100px;
     background: linear-gradient(90deg ,rgb(8, 18, 34), rgb(29, 5, 5));
 }
 
 body {
     background: linear-gradient(135deg, #83a1d1, #c7a9e9);
-    height: 100%;
+    height: 100vh;
 }
 
 .container {
