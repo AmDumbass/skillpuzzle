@@ -27,7 +27,7 @@ onAuthStateChanged(auth, (user) => {
         userPhoto.src = user.photoURL || 'https://via.placeholder.com/100';  // Default photo if none is provided
     } else {
         // User is not signed in, redirect to login page
-        window.location.href = '/login.html';
+        window.location.href = '/login';
     }
 });
 
@@ -35,7 +35,7 @@ onAuthStateChanged(auth, (user) => {
 signOutButton.addEventListener('click', () => {
     signOut(auth).then(() => {
         // Sign-out successful.
-        window.location.href = '/index.html';
+        window.location.href = '/';
     }).catch((error) => {
         // An error happened.
         console.error('Error signing out:', error);
