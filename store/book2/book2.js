@@ -54,10 +54,4 @@ async function requestBuy(requestType) {
     }
 }
 
-buy_1.onclick = () => requestBuy('Sách 1');
 buy_2.onclick = () => requestBuy('Sách 2');
-buy_3.onclick = () => requestBuy('Sách 3');
-buy_4.onclick = () => requestBuy('Sách 4');
-buy_5.onclick = () => requestBuy('Sách 5');
-buy_6.onclick = () => requestBuy('Sách 6');
-buy_combo.onclick = () => requestBuy('Combo Sách');

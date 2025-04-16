@@ -16,12 +16,6 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-const buy_1 = document.getElementById("buy-book-1-btn");
-const buy_2 = document.getElementById("buy-book-2-btn");
-const buy_3 = document.getElementById("buy-book-3-btn");
-const buy_4 = document.getElementById("buy-book-4-btn");
-const buy_5 = document.getElementById("buy-book-5-btn");
-const buy_6 = document.getElementById("buy-book-6-btn");
 const buy_combo = document.getElementById("buy-book-combo-btn");
 
 async function requestBuy(requestType) {
@@ -54,10 +48,4 @@ async function requestBuy(requestType) {
     }
 }
 
-buy_1.onclick = () => requestBuy('Sách 1');
-buy_2.onclick = () => requestBuy('Sách 2');
-buy_3.onclick = () => requestBuy('Sách 3');
-buy_4.onclick = () => requestBuy('Sách 4');
-buy_5.onclick = () => requestBuy('Sách 5');
-buy_6.onclick = () => requestBuy('Sách 6');
 buy_combo.onclick = () => requestBuy('Combo Sách');
