@@ -136,4 +136,12 @@ body {
 footer {
     min-height: 100px;
     background: linear-gradient(90deg ,rgb(8, 18, 34), rgb(29, 5, 5));
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.321);
+    
+    .txt-container {
+        margin: 5px 10px;
+    }
 }
