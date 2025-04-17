@@ -76,18 +76,65 @@ nav svg {
 }
 
 footer {
-    height: 50px;
+    min-height: 100px;
     background: linear-gradient(90deg ,rgb(8, 18, 34), rgb(29, 5, 5));
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.321);
+    
+    .txt-container {
+        margin: 5px 10px;
+    }
 }
 
 body {
     background: linear-gradient(135deg, #83a1d1, #c7a9e9);
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.book-container {
-    margin: 20px;
+.push-down {
+    flex: 1;
+}
+
+main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+    .book-nav {
+        background-color: white;
+        width: 30%;
+        margin: 5px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+        > * {
+            margin: 2px 5px;
+        }
+
+        h2 {
+            color: rgb(56, 110, 209);
+        }
+
+        #no-book {
+            font-size: smaller;
+            margin: 10px;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        li {
+            margin-left: 20px;
+        }
+    }
+
+    .book-container {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
