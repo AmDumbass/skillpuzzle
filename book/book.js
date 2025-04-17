@@ -30,6 +30,7 @@ async function getUserBooks() {
     if (docSnap.exists()) {
         const userData = docSnap.data();
         const booksArray = userData.bookHas || [];
+        booksArray.sort();
         return booksArray;
     } else {
         console.log("No such document!");
