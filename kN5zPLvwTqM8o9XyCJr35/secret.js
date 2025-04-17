@@ -47,7 +47,7 @@ async function firstVisit(book) {
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
-        firstVisit("book1");
+        firstVisit("book5");
     } else {
         console.log("User not logged in");
         // window.location.href = "/login";
