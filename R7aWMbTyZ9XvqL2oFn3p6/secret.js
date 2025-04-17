@@ -50,6 +50,6 @@ onAuthStateChanged(auth, (user) => {
         firstVisit("book6");
     } else {
         console.log("User not logged in");
-        // window.location.href = "/login";
+        window.location.href = "/login";
     }
 });
